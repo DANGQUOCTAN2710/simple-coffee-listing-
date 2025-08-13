@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import HeaderContent from "./HeaderContent";
-
+import BodyContent from "./BodyContent";
 export default function Layout() {
   const [data, setData] = useState([]);
 
@@ -18,8 +18,9 @@ export default function Layout() {
 
   return (
     <>
-      <div className="absolute mx-28 bg-[#1B1D1F] -mt-42 flex justify-center w-[calc(100%-224px)] rounded-2xl">
-        <HeaderContent data={data} />
+      <div className="absolute left-1/2 transform -translate-x-1/2 bg-[#1B1D1F] lg:-mt-42 sm:-mt-32 flex justify-center items-center flex-col sm:min-w-[965px] rounded-2xl">
+        <HeaderContent />
+        <BodyContent data={data}/>
       </div>
     </>
   );

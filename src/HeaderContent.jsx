@@ -1,7 +1,7 @@
 export default function HeaderContent() {
   return (
     <>
-      <div className="relative flex flex-col items-center min-h-screen max-w-[455px]">
+      <div className="relative flex flex-col items-center max-w-[455px] ">
         <h1 className="text-[32px] font-bold pt-22 mb-5">Our Collection</h1>
         <p className="text-center text-[#6F757C]">
           Introducing our Coffee Collection, a selection of unique coffees from
